@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:funky="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blaze_zoom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intrusoft.islibrarydemo.BlazeZoomActivity">
+
+    <com.intrusoft.blaze.ZoomView
+        android:id="@+id/zoom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        funky:src="@drawable/image1"
+        funky:translation_factor="0.4" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        funky:popupTheme="@style/AppTheme.PopupOverlay"
+        funky:theme="@style/AppTheme.AppBarOverlay" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:onClick="motionView"
+        android:text="Motion View" />
+
+
+</RelativeLayout>

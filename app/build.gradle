@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.intrusoft.islibrarydemo"
+        minSdkVersion 11
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Google
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+
+    //Intruder Shanky
+    compile 'com.github.intrudershanky:squint:2.1.0'
+    compile 'com.github.intrudershanky:funkyheader:1.2.1'
+    compile 'com.github.intrudershanky:sectioned-recyclerview:1.0.0'
+    compile 'com.github.intrudershanky:milano:1.2.0'
+    compile 'com.github.intrudershanky:blaze:2.1.0'
+    compile 'com.github.intrudershanky:scatter-piechart:1.0.0'
+    compile 'com.github.IntruderShanky:Flare:1.0.2'
+}

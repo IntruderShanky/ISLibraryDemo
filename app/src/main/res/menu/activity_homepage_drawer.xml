@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:menuCategory="container">
+
+        <item
+            android:id="@+id/github"
+            android:icon="@drawable/ic_github_logo"
+            android:title="GitHub" />
+
+        <item
+            android:id="@+id/facebook"
+            android:icon="@drawable/ic_facebook_app_logo"
+            android:title="Facebook" />
+
+        <item
+            android:id="@+id/linkedin"
+            android:icon="@drawable/ic_linkedin_sign"
+            android:title="LinkedIn" />
+    </group>
+</menu>
